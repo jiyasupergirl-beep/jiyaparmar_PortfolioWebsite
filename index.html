@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jiya Parmar | Portfolio</title>
+  <meta name="description" content="Portfolio of Jiya Parmar: skills, projects and contact details.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Literata:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a href="#home" class="logo">Jiya Parmar</a>
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+  <nav id="menu">
+    <a href="#home">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="resume/Jiya_Parmar_Resume.pdf" class="nav-resume" download>Resume</a>
+  </nav>
+</header>
+
+<main>
+  <!-- HOME / ABOUT -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <p class="hello">Hi, I'm</p>
+      <h1>Jiya Parmar</h1>
+      <p class="tagline">I build clean, friendly web experiences and keep learning every day.</p>
+      <p class="bio">
+        I'm an IT student who enjoys turning ideas into working websites. I like writing tidy code,
+        working in a team, and using Git and GitHub to keep every change organised.
+        <!-- TODO: Replace this bio with 2-3 sentences about yourself. -->
+      </p>
+      <div class="btn-row">
+        <a class="btn primary" href="resume/Jiya_Parmar_Resume.pdf" download>Download resume</a>
+        <a class="btn" href="resume/Jiya_Parmar_Resume.pdf" target="_blank" rel="noopener">View resume</a>
+      </div>
+    </div>
+    <figure class="photo">
+      <!-- TODO: Put your photo at images/jiya.jpg -->
+      <img src="images/jiya.jpg" alt="Portrait of Jiya Parmar"
+           onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 480%22><rect width=%22400%22 height=%22480%22 fill=%22%23E9DDF5%22/><text x=%22200%22 y=%22260%22 font-size=%2296%22 text-anchor=%22middle%22 fill=%22%236B3FA0%22 font-family=%22sans-serif%22>JP</text></svg>'">
+    </figure>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="panel">
+        <h3>Technical</h3>
+        <ul class="bars">
+          <li><span>HTML5</span><div class="bar"><i data-level="90"></i></div></li>
+          <li><span>CSS3</span><div class="bar"><i data-level="85"></i></div></li>
+          <li><span>JavaScript</span><div class="bar"><i data-level="70"></i></div></li>
+          <li><span>Git &amp; GitHub</span><div class="bar"><i data-level="75"></i></div></li>
+          <li><span>Python</span><div class="bar"><i data-level="65"></i></div></li>
+          <li><span>SQL</span><div class="bar"><i data-level="60"></i></div></li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Soft skills</h3>
+        <ul class="chips">
+          <li>Communication</li>
+          <li>Teamwork</li>
+          <li>Problem solving</li>
+          <li>Time management</li>
+          <li>Adaptability</li>
+          <li>Creativity</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <article class="project">
+        <h3>Student Task Manager</h3>
+        <p>A to-do web app to add, complete and delete tasks, with data saved in the browser.</p>
+        <p class="stack">HTML, CSS, JavaScript</p>
+        <a href="https://github.com/YOUR-USERNAME/task-manager" target="_blank" rel="noopener">View on GitHub</a>
+      </article>
+      <article class="project">
+        <h3>Weather Finder</h3>
+        <p>Search any city and see its current temperature and conditions using a public weather API.</p>
+        <p class="stack">JavaScript, REST API</p>
+        <a href="https://github.com/YOUR-USERNAME/weather-finder" target="_blank" rel="noopener">View on GitHub</a>
+      </article>
+      <article class="project">
+        <h3>Library Database</h3>
+        <p>A small database design for books, members and issue records with sample queries.</p>
+        <p class="stack">SQL, MySQL</p>
+        <a href="https://github.com/YOUR-USERNAME/library-database" target="_blank" rel="noopener">View on GitHub</a>
+      </article>
+      <article class="project">
+        <h3>Portfolio Website</h3>
+        <p>This responsive site, built for the Git and GitHub course and hosted on GitHub Pages.</p>
+        <p class="stack">HTML, CSS, JavaScript</p>
+        <a href="https://github.com/YOUR-USERNAME/Jiya_Parmar_PortfolioWebsite" target="_blank" rel="noopener">View on GitHub</a>
+      </article>
+    </div>
+    <!-- TODO: Replace titles, descriptions and links with your real projects. -->
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-grid">
+      <form id="contactForm" novalidate>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button class="btn primary" type="submit">Send message</button>
+        <p id="formStatus" role="status"></p>
+      </form>
+      <div class="panel">
+        <h3>Find me online</h3>
+        <ul class="links">
+          <li><a href="mailto:your.email@example.com">your.email@example.com</a></li>
+          <li><a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; <span id="year">2026</span> Jiya Parmar</p>
+  <p class="foot-links">
+    <a href="mailto:your.email@example.com">Email</a>
+    <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub</a>
+  </p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
